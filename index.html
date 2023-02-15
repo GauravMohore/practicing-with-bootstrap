@@ -108,9 +108,15 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Blog</a></li>
         <li class="breadcrumb-item"><a href="#">Technology</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+        <li class="breadcrumb-item active" aria-current="page">Bootstrap <span class="badge badge-primary">New</span></li>
       </ol>
     </nav>
+
+    <!-- Button - Component -->
+    <divp id="btn-div" style="padding:5px">
+      <button id='btn-1' type="button" class="btn btn-outline-primary">Google</button>
+      <button id='btn-2' type="button" class="btn btn-outline-danger">YouTube</button>
+    </divp>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -129,5 +135,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Manual Script -->
+    <script>
+      document.getElementById('btn-1').addEventListener('click', (e)=>{
+        window.open("https://www.google.com/")
+      })      
+      document.getElementById('btn-2').addEventListener('click', (e)=>{
+        window.open("https://www.youtube.com/feed/subscriptions")
+      })
+    </script>
   </body>
 </html>
