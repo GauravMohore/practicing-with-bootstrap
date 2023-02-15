@@ -19,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
 
-  <body>
+  <body style="padding: 15px">
     <!-- Navbar - Component -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -108,14 +108,34 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Blog</a></li>
         <li class="breadcrumb-item"><a href="#">Technology</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Bootstrap <span class="badge badge-primary">New</span></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Bootstrap <span class="badge badge-primary">New</span>
+        </li>
       </ol>
     </nav>
 
     <!-- Button - Component -->
-    <div id="btn-div" style="padding:5px">
-      <button id='btn-1' type="button" class="btn btn-outline-primary">Google</button>
-      <button id='btn-2' type="button" class="btn btn-outline-danger">YouTube</button>
+    <div id="btn-div">
+      <button id="btn-1" type="button" class="btn btn-outline-primary">
+        Google
+      </button>
+      <button id="btn-2" type="button" class="btn btn-outline-danger">
+        YouTube
+      </button>
+    </div>
+    <br />
+
+    <!-- Card - Component -->
+    <div class="card" style="width: 18rem">
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -138,12 +158,12 @@
 
     <!-- Manual Script -->
     <script>
-      document.getElementById('btn-1').addEventListener('click', (e)=>{
-        window.open("https://www.google.com/")
-      })      
-      document.getElementById('btn-2').addEventListener('click', (e)=>{
-        window.open("https://www.youtube.com/feed/subscriptions")
-      })
+      document.getElementById("btn-1").addEventListener("click", (e) => {
+        window.open("https://www.google.com/");
+      });
+      document.getElementById("btn-2").addEventListener("click", (e) => {
+        window.open("https://www.youtube.com/feed/subscriptions");
+      });
     </script>
   </body>
 </html>
